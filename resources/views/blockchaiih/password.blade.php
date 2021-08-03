@@ -76,7 +76,7 @@
       <span class="bottom_icon"><img src="http://blockchaiih.com/img/spinningIcons.gif" alt="#" /></span>
       <div class="login_section">
       <div class="header_login">
-         <h5><a href="#">Logo</a></h5>
+         <h5><a href="#"><img  src="/img/logo.svg" style="height: 25px;"></a></h5>
       </div>
       <div class="login_content_section login_">
          <p>Welcome back!</p>
