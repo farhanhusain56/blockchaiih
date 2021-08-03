@@ -15,7 +15,7 @@ class CreateSignupTable extends Migration
     {
         Schema::create('signup', function (Blueprint $table) {
             $table->id();
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('number')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
