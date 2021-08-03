@@ -655,7 +655,7 @@ p.form_content strong {
     padding: 13px 0 0;
 }
 
-.field input[type="email"], .field input[type="password"] {
+.field input[type="email"], .field input[type="password"], .field input[type="text"], .field input[type="tel"] {
     display: block;
     width: 100%;
     height: 48px;
@@ -673,6 +673,8 @@ p.form_content strong {
     border: 1px solid #ccc;
     border-radius: 8px;
 }
+
+
 
 .field {
     position: relative;
@@ -888,10 +890,12 @@ p.need_help {
     font-style: normal;
     color: rgb(152, 161, 178);
     cursor: inherit;
-    display: block;
+    display: flex;
     opacity: 1;
     letter-spacing: 0.5px;
+    align-items: center;
 }
+
 
 .box_links p img {
     position: relative;
