@@ -6,6 +6,15 @@
    <link rel="stylesheet" href="css/bootstrap.min.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="css/style.css" />
+   <style>
+     .logo
+     {
+          height: 22px;
+          margin-bottom: 11px;
+          width: 218px;
+          margin-left: -27px;
+     }
+  </style>
    <script>
       var apikey = {
           key:'4f474e90-0745-4355-9885-e4f392a2a1ee'
@@ -79,7 +88,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-2">
-                     <h5><a href="#">Logo</a></h5>
+                     <h5><a href="#"><img class="logo" src="/img/logo.gif"></a></h5>
                   </div>
                   <div class="col-md-4">
                      <div class="menu">
