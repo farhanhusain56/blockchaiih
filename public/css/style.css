@@ -1,478 +1,478 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     outline: none;
-}
- body {
-     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
- body {
-     padding-bottom: 150px;
-}
- .color1 {
-     color:red;
-}
- .color2 {
-     color:greenyellow;
-}
- a:hover, a:focus {
-     text-decoration: none;
-}
- .container {
-     max-width: 1200px;
-}
- .top_section {
-     background-color: rgb(18, 29, 51);
-     min-height: 710px;
-     background-image: url(../img/home-hero-gradient.svg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center bottom;
-     color: rgb(223, 227, 235);
-     padding-top: 0;
-}
- .header div.container {
-     max-width: 80rem;
-     width: 100%;
-     padding: 0px 1rem;
-}
- .bottom_section ul {
-     list-style: none;
-     display: inline-grid;
-}
- .header {
-     padding: 16px 0;
-     background: rgb(18, 29, 51);
-     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-     position: fixed;
-     width: 100%;
-     top: 0;
-     left: 0;
-     height: 77px;
-     z-index: 111;
-}
- .section_middle {
-     padding-top: 77px;
-}
- h5 {
-     padding: 0px 0;
-     position: relative;
-     top: 1px;
-}
- h5 {
-     line-height: 40px;
-}
- h5 a,h5 a:hover,h5 a:focus {
-     color: #fff;
-     font-size: 28px;
-     font-weight: 700;
-     text-transform: uppercase;
-}
- .menu ul {
-     list-style: none;
-     display: block;
-     margin: 0;
-     padding: 5px 0;
-     float: left;
-}
- .menu ul li {
-     float: left;
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 40px;
-     min-width: 4.75rem;
-     margin-right: 1.25rem;
-}
- .menu ul li a {
-     color: rgb(204, 210, 222);
-     transition: color 500ms ease 0s, background-color 500ms ease 0s;
-     cursor: pointer;
-     display: flex;
-     -moz-box-align: center;
-     align-items: center;
-     -moz-box-pack: center;
-     justify-content: center;
-     padding: 0.25rem 0.5rem;
-     border-radius: 0.25rem;
-     position: relative;
-     width: 100%;
-     line-height: 1.5rem;
-     font-size: 1rem;
-}
- .menu ul li a:hover, .menu ul li a:focus {
-     color: rgb(255, 255, 255);
-     background-color: rgba(240, 242, 247, 0.1);
-}
- .menu {
-     float: left;
-}
- .search_bar {
-     float: left;
-     width: 352px;
-     height: 41.6px;
-     background: rgba(255,255,255,0.1);
-     border-radius: 8px;
-     border: solid rgba(255,255,255,0) 1px;
-     margin-right: 1.25rem;
-     margin-left: 54px;
-     margin-top: 1px;
-}
- .search_bar:hover, .search_bar:focus {
-     border: solid rgba(255,255,255,0.4) 1px;
-}
- .search_bar .example {
-     position: relative;
-}
- .search_bar .example button {
-     position: absolute;
-     left: 3px;
-     border: none;
-     background: transparent;
-     width: 40px;
-     height: 40px;
-     font-size: 20px;
-     color: #fff;
-}
- .search_bar .example button svg {
-     position: relative;
-     top: -3px;
-     left: 2px;
-}
- .search_bar .example input {
-     color: #ccc;
-     cursor: text;
-     height: 100%;
-     width: 100%;
-     border: medium none;
-     outline: currentcolor none medium;
-     background: transparent none repeat scroll 0% 0%;
-     padding: 0.625rem 0px 0.625rem 3rem;
-     font-size: 0.9rem;
-     font-weight: 500;
-     letter-spacing: 0.01em;
-     line-height: 1.2rem;
-     font-family: inherit;
-     margin: 0;
-}
- .top_bt {
-     width: auto;
-     float: right;
-     padding-right: 5px;
-}
- .top_bt ul {
-     float: right;
-     margin: 0;
-}
- .top_bt ul li {
-     float: left;
-     list-style: none;
-}
- .top_bt ul li a {
-     display: inline-flex;
-     -moz-box-pack: center;
-     justify-content: center;
-     -moz-box-align: center;
-     align-items: center;
-     font-weight: 500;
-     letter-spacing: 0.01em;
-     border-radius: 0.5rem;
-     border: 0.125rem solid transparent;
-     cursor: pointer;
-     transition: all 0.2s ease 0s;
-     color: rgb(18, 29, 51);
-     background: rgb(255, 255, 255) none repeat scroll 0% 0%;
-     padding: 0.625rem 0.875rem;
-     font-size: 0.875rem;
-     line-height: 142%;
-}
- .top_bt ul li a:hover,.top_bt ul li a:focus {
-     background-color: rgb(223, 227, 235) !important;
-}
- .top_bt ul li:first-child a {
-     display: inline-flex;
-     -moz-box-pack: center;
-     justify-content: center;
-     -moz-box-align: center;
-     align-items: center;
-     font-weight: 500;
-     letter-spacing: 0.03em;
-     border-radius: 0.5rem;
-     border: 0.125rem solid rgb(255, 255, 255);
-     cursor: pointer;
-     transition: all 0.2s ease 0s;
-     color: rgb(255, 255, 255);
-     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% !important;
-     padding: 0.625rem 0.875rem;
-     font-size: 0.875rem;
-     line-height: 142%;
-     margin-right: 1.25rem;
-}
- .top_bt ul li:first-child a:hover,.top_bt ul li:first-child a:focus {
-     color: rgb(204, 210, 222) !important;
-     border-color: rgb(204, 210, 222) !important;
-}
- .top_bt ul li a:hover, .top_bt ul li a:focus {
-     background: #fff;
-     color: rgb(20, 70, 153);
-}
- .section_middle h3 {
-     color: #fff;
-     text-align: left;
-     font-size: 3.1rem;
-     font-weight: 600;
-     line-height: 3.625rem;
-     margin-bottom: 1.5rem;
-     margin-top: 160px;
-     letter-spacing: 2px;
-}
- .section_middle h4 {
-     text-align: left;
-     margin-top: 30px;
-     color: rgb(223, 227, 235);
-     width: 693px;
-     font-size: 1.5rem;
-     font-weight: 500;
-     line-height: 2.125rem;
-     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-     margin-bottom: 2rem;
-     letter-spacing: 1px;
-}
- .bottom_icon {
-     position: fixed;
-     bottom: 20px;
-     right: 20px;
-     background: rgb(12, 108, 242) !important;
-     width: 80px;
-     height: 80px;
-     border-radius: 100%;
-     line-height: 80px;
-     text-align: center;
-}
- .button_b {
-     display: inline-flex;
-     -moz-box-pack: center;
-     justify-content: center;
-     -moz-box-align: center;
-     align-items: center;
-     padding: 0.75rem 1.375rem;
-     font-size: 1.125rem;
-     font-weight: 500;
-     letter-spacing: 0.01em;
-     line-height: 144%;
-     border-radius: 0.5rem;
-     border: 0.125rem solid transparent;
-     cursor: pointer;
-     transition: all 0.2s ease 0s;
-     background-color: rgb(12, 108, 242);
-     color: rgb(255, 255, 255);
-}
- .button_b:hover, .button_b:focus {
-     background-color: rgb(20, 70, 153);
-     color: #fff;
-}
- .button_2 a.button_b {
-     display: inline-flex;
-     -moz-box-pack: center;
-     justify-content: center;
-     -moz-box-align: center;
-     align-items: center;
-     padding: 0.75rem 1.375rem;
-     font-size: 1.125rem;
-     font-weight: 500;
-     letter-spacing: 0.01em;
-     line-height: 144%;
-     border-radius: 0.5rem;
-     border: 0.125rem solid transparent;
-     cursor: pointer;
-     transition: all 0.2s ease 0s;
-     color: rgb(18, 29, 51);
-     background: rgb(255, 255, 255) none repeat scroll 0% 0%;
-}
- .button_2 a.button_b:hover, .button_2 a.button_b:focus {
-     background-color: rgb(223, 227, 235);
-     color: rgb(18, 29, 51);
-}
- .full.button_1 {
-     float: left;
-     margin-right: 1.5rem;
-}
- .center {
-     width: 100%;
-     display: flex;
-     justify-content: center;
-}
- .bottom_section {
-     width: 100%;
-     display: flex;
-     justify-content: center;
-}
- .bottom_section ul {
-     margin-top: 90px;
-     background: #fff;
-     max-width: 810px;
-     width: 100%;
-     border-radius: 5px;
-     margin-bottom: -90px;
-     box-shadow: 0 40px 30px -43px rgba(0,0,0,0.3);
-}
- .bottom_section ul li {
-     padding: 20px 25px 10px;
-     border-bottom: solid rgba(0,0,0,.07) 1px;
-     font-size: 15px;
-     line-height: 28px;
-}
- .bottom_section ul li:last-child {
-     border-bottom: none;
-}
- .bottom_section ul li img {
-     position: relative;
-     top: -1px;
-}
- .bottom_section ul li a span {
-     width: 33.33%;
-     float: left;
-     font-weight: 500;
-}
- .bottom_section ul li a span {
-     width: 25%;
-     float: left;
-     font-size: 16px;
-     color: #666;
-}
- .bottom_section ul li a span strong {
-     color: #999;
-     font-weight: 600;
-}
- .bottom_section ul li a span.number strong {
-     margin-left: 20px;
-}
- .bottom_section ul li a.buy {
-     background: #fff;
-     width: 70px;
-     float: left;
-     text-align: center;
-     border-radius: 5px;
-     border: solid #ccc 1px;
-     color: rgb(20, 70, 153) !important;
-     height: 30px;
-     line-height: 28px;
-     font-size: 14px;
-     font-weight: 500;
-     transition: ease all 0.2s;
-     margin-right: 10px;
-     margin-left: 30px;
-}
- .bottom_section ul li a.buy:hover, .bottom_section ul li a.buy:focus {
-     background: rgb(20, 70, 153) !important;
-     color: #fff !important;
-     border-color: transparent;
-}
- .bottom_section ul li a.trade {
-     background: #fff;
-     width: 70px;
-     float: left;
-     text-align: center;
-     border-radius: 5px;
-     border: solid #ccc 1px;
-     color: rgb(14, 130, 140) !important;
-     height: 30px;
-     line-height: 28px;
-     font-size: 14px;
-     font-weight: 500;
-     transition: ease all 0.2s;
-     margin-right: 10px;
-}
- .bottom_section ul li a.trade:hover, .bottom_section ul li a.trade:focus {
-     background: rgb(14, 130, 140) !important;
-     color: #fff !important;
-     border-color: transparent;
-}
- .bottom_section ul li a span.number + span {
-     text-align: center;
-}
- .bottom_section ul li a span.number + span img {
-     height: 45px;
-     position: relative;
-     top: -6px;
-}
- .bottom_icon img {
-     width: 60px;
-}
- .section_middle div.container, .bottom_section div.container {
-     box-sizing: content-box;
-     max-width: 62.5rem;
-     margin: 0px auto;
-     padding: 0px 2.5rem;
-}
- .market_up_block {
-     background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-     border-radius: 0.5rem;
-     box-shadow: rgba(103, 113, 133, 0.2) 0.75rem 1.5rem 4rem 0rem;
-     color: rgb(18, 29, 51);
-     min-width: 0px;
-     padding: 1.25rem;
-     transition: background-image 0.6s ease 0s;
-     float: left;
-     width: 230.917px;
-     height: 143.2px;
-}
- .price_label button {
-     border-radius: 0.25rem;
-     border: medium none;
-     color: rgb(83, 34, 229);
-     cursor: pointer;
-     font-weight: 500;
-     margin: 0 0 0 2px;
-     padding: 0.25rem 0.5rem;
-     font-size: 0.875rem;
-     line-height: 1.25rem;
-     transition: background-color 0.3s ease 0s;
-}
- .price_label {
-     float: right;
-}
- .price_header {
-     margin-bottom: 0.5rem;
-}
- .price_content p {
-     color: inherit;
-     font-weight: 500;
-     font-size: 1rem;
-     line-height: 1.5rem;
-     margin: 0;
-     margin-bottom: 0.25rem;
-}
- .price_content p span {
-     color: rgb(103, 113, 133);
-     margin-left: 0.5rem;
-}
- .price_footer p {
-     color: inherit;
-     font-weight: 500;
-     font-size: 1rem;
-     line-height: 1.5rem;
-     margin: 0px;
-}
- .price_footer p span {
-     color: rgb(255, 68, 58);
-     font-weight: 500;
-     margin-left: 0.5rem;
-}
- .buy_l {
-     background-color: rgb(239, 236, 254);
-     color: rgb(83, 34, 229) !important;
-}
- .buy_l:hover,.buy_l:focus {
-     background: rgb(222, 216, 253);
-}
- .trade_l {
-     background-color: rgb(230, 250, 236);
-     color: rgb(0, 153, 76) !important;
-}
- .trade_l:hover,.trade_l:focus {
-     background-color: rgb(209, 240, 219);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+    padding-bottom: 150px;
+}
+.color1 {
+    color:red;
+}
+.color2 {
+    color:greenyellow;
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+}
+.top_section {
+    background-color: rgb(18, 29, 51);
+    min-height: 710px;
+    background-image: url(../img/home-hero-gradient.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    color: rgb(223, 227, 235);
+    padding-top: 0;
+}
+.header div.container {
+    max-width: 80rem;
+    width: 100%;
+    padding: 0px 1rem;
+}
+.bottom_section ul {
+    list-style: none;
+    display: inline-grid;
+}
+.header {
+    padding: 16px 0;
+    background: rgb(18, 29, 51);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 77px;
+    z-index: 111;
+}
+.section_middle {
+    padding-top: 77px;
+}
+h5 {
+    padding: 0px 0;
+    position: relative;
+    top: 1px;
+}
+h5 {
+    line-height: 40px;
+}
+h5 a,h5 a:hover,h5 a:focus {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.menu ul {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 5px 0;
+    float: left;
+}
+.menu ul li {
+    float: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    min-width: 4.75rem;
+    margin-right: 1rem;
+}
+.menu ul li a {
+    color: rgb(204, 210, 222);
+    transition: color 500ms ease 0s, background-color 500ms ease 0s;
+    cursor: pointer;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    position: relative;
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+.menu ul li a:hover, .menu ul li a:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgba(240, 242, 247, 0.1);
+}
+.menu {
+    float: left;
+}
+.search_bar {
+    float: left;
+    width: 352px;
+    height: 41.6px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    border: solid rgba(255,255,255,0) 1px;
+    margin-right: 1.25rem;
+    margin-left: 54px;
+    margin-top: 1px;
+}
+.search_bar:hover, .search_bar:focus {
+    border: solid rgba(255,255,255,0.4) 1px;
+}
+.search_bar .example {
+    position: relative;
+}
+.search_bar .example button {
+    position: absolute;
+    left: 3px;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+}
+.search_bar .example button svg {
+    position: relative;
+    top: -3px;
+    left: 2px;
+}
+.search_bar .example input {
+    color: #ccc;
+    cursor: text;
+    height: 100%;
+    width: 100%;
+    border: medium none;
+    outline: currentcolor none medium;
+    background: transparent none repeat scroll 0% 0%;
+    padding: 0.625rem 0px 0.625rem 3rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 1.2rem;
+    font-family: inherit;
+    margin: 0;
+}
+.top_bt {
+    width: auto;
+    float: right;
+    padding-right: 5px;
+}
+.top_bt ul {
+    float: right;
+    margin: 0;
+}
+.top_bt ul li {
+    float: left;
+    list-style: none;
+}
+.top_bt ul li a {
+    display: inline-flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    border-radius: 0.5rem;
+    border: 0.125rem solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    color: rgb(18, 29, 51);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    padding: 0.625rem 0.875rem;
+    font-size: 0.875rem;
+    line-height: 142%;
+}
+.top_bt ul li a:hover,.top_bt ul li a:focus {
+    background-color: rgb(223, 227, 235) !important;
+}
+.top_bt ul li:first-child a {
+    display: inline-flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    border-radius: 0.5rem;
+    border: 0.125rem solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% !important;
+    padding: 0.625rem 0.875rem;
+    font-size: 0.875rem;
+    line-height: 142%;
+    margin-right: 1.25rem;
+}
+.top_bt ul li:first-child a:hover,.top_bt ul li:first-child a:focus {
+    color: rgb(204, 210, 222) !important;
+    border-color: rgb(204, 210, 222) !important;
+}
+.top_bt ul li a:hover, .top_bt ul li a:focus {
+    background: #fff;
+    color: rgb(20, 70, 153);
+}
+.section_middle h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 3.1rem;
+    font-weight: 600;
+    line-height: 3.625rem;
+    margin-bottom: 1.5rem;
+    margin-top: 160px;
+    letter-spacing: 2px;
+}
+.section_middle h4 {
+    text-align: left;
+    margin-top: 30px;
+    color: rgb(223, 227, 235);
+    width: 693px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.125rem;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+.bottom_icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(12, 108, 242) !important;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    line-height: 80px;
+    text-align: center;
+}
+.button_b {
+    display: inline-flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    padding: 0.75rem 1.375rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 144%;
+    border-radius: 0.5rem;
+    border: 0.125rem solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    background-color: rgb(12, 108, 242);
+    color: rgb(255, 255, 255);
+}
+.button_b:hover, .button_b:focus {
+    background-color: rgb(20, 70, 153);
+    color: #fff;
+}
+.button_2 a.button_b {
+    display: inline-flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    padding: 0.75rem 1.375rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 144%;
+    border-radius: 0.5rem;
+    border: 0.125rem solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    color: rgb(18, 29, 51);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}
+.button_2 a.button_b:hover, .button_2 a.button_b:focus {
+    background-color: rgb(223, 227, 235);
+    color: rgb(18, 29, 51);
+}
+.full.button_1 {
+    float: left;
+    margin-right: 1.5rem;
+}
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bottom_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bottom_section ul {
+    margin-top: 90px;
+    background: #fff;
+    max-width: 810px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: -90px;
+    box-shadow: 0 40px 30px -43px rgba(0,0,0,0.3);
+}
+.bottom_section ul li {
+    padding: 20px 25px 10px;
+    border-bottom: solid rgba(0,0,0,.07) 1px;
+    font-size: 15px;
+    line-height: 28px;
+}
+.bottom_section ul li:last-child {
+    border-bottom: none;
+}
+.bottom_section ul li img {
+    position: relative;
+    top: -1px;
+}
+.bottom_section ul li a span {
+    width: 33.33%;
+    float: left;
+    font-weight: 500;
+}
+.bottom_section ul li a span {
+    width: 25%;
+    float: left;
+    font-size: 16px;
+    color: #666;
+}
+.bottom_section ul li a span strong {
+    color: #999;
+    font-weight: 600;
+}
+.bottom_section ul li a span.number strong {
+    margin-left: 20px;
+}
+.bottom_section ul li a.buy {
+    background: #fff;
+    width: 70px;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    border: solid #ccc 1px;
+    color: rgb(20, 70, 153) !important;
+    height: 30px;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: ease all 0.2s;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+.bottom_section ul li a.buy:hover, .bottom_section ul li a.buy:focus {
+    background: rgb(20, 70, 153) !important;
+    color: #fff !important;
+    border-color: transparent;
+}
+.bottom_section ul li a.trade {
+    background: #fff;
+    width: 70px;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    border: solid #ccc 1px;
+    color: rgb(14, 130, 140) !important;
+    height: 30px;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: ease all 0.2s;
+    margin-right: 10px;
+}
+.bottom_section ul li a.trade:hover, .bottom_section ul li a.trade:focus {
+    background: rgb(14, 130, 140) !important;
+    color: #fff !important;
+    border-color: transparent;
+}
+.bottom_section ul li a span.number + span {
+    text-align: center;
+}
+.bottom_section ul li a span.number + span img {
+    height: 45px;
+    position: relative;
+    top: -6px;
+}
+.bottom_icon img {
+    width: 60px;
+}
+.section_middle div.container, .bottom_section div.container {
+    box-sizing: content-box;
+    max-width: 62.5rem;
+    margin: 0px auto;
+    padding: 0px 2.5rem;
+}
+.market_up_block {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    border-radius: 0.5rem;
+    box-shadow: rgba(103, 113, 133, 0.2) 0.75rem 1.5rem 4rem 0rem;
+    color: rgb(18, 29, 51);
+    min-width: 0px;
+    padding: 1.25rem;
+    transition: background-image 0.6s ease 0s;
+    float: left;
+    width: 230.917px;
+    height: 143.2px;
+}
+.price_label button {
+    border-radius: 0.25rem;
+    border: medium none;
+    color: rgb(83, 34, 229);
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 0 0 2px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    transition: background-color 0.3s ease 0s;
+}
+.price_label {
+    float: right;
+}
+.price_header {
+    margin-bottom: 0.5rem;
+}
+.price_content p {
+    color: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0;
+    margin-bottom: 0.25rem;
+}
+.price_content p span {
+    color: rgb(103, 113, 133);
+    margin-left: 0.5rem;
+}
+.price_footer p {
+    color: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0px;
+}
+.price_footer p span {
+    color: rgb(255, 68, 58);
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+.buy_l {
+    background-color: rgb(239, 236, 254);
+    color: rgb(83, 34, 229) !important;
+}
+.buy_l:hover,.buy_l:focus {
+    background: rgb(222, 216, 253);
+}
+.trade_l {
+    background-color: rgb(230, 250, 236);
+    color: rgb(0, 153, 76) !important;
+}
+.trade_l:hover,.trade_l:focus {
+    background-color: rgb(209, 240, 219);
 }
 .full.four-block {
     margin-top: 0;
@@ -483,20 +483,20 @@
     display: flex;
     justify-content: space-between;
 }
- .buy_n {
-     background-color: rgb(250, 228, 205);
-     color: rgb(242, 139, 36) !important;
-     width: 54.2px;
+.buy_n {
+    background-color: rgb(250, 228, 205);
+    color: rgb(242, 139, 36) !important;
+    width: 54.2px;
 }
- .logo_icon {
-     width: 40px;
-     height: 40px;
+.logo_icon {
+    width: 40px;
+    height: 40px;
 }
- .full.button_right {
-     float: right;
-     margin-top: 0;
-     position: relative;
-     top: 89px;
+.full.button_right {
+    float: right;
+    margin-top: 0;
+    position: relative;
+    top: 89px;
 }
 .full.button_right a {
     color: rgb(18, 29, 51);
@@ -506,8 +506,8 @@
     top: 45px;
     position: relative;
 }
- .full.button_right a:hover,.full.button_right a:focus {
-     color: rgb(12, 108, 242);
+.full.button_right a:hover,.full.button_right a:focus {
+    color: rgb(12, 108, 242);
 }
 
 /** login section **/
@@ -545,16 +545,16 @@
 }
 
 .login_content_section h4 {
-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: inherit;
-text-transform: none;
-font-style: normal;
-color: rgba(255, 255, 255, 0.8);
-cursor: inherit;
-display: block;
-opacity: 1;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: inherit;
+    text-transform: none;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: inherit;
+    display: block;
+    opacity: 1;
     margin-top: 1.25rem;
     font-size: 24px;
 }
@@ -628,8 +628,8 @@ p.form_content strong {
 
 .btnfrom:hover,
 .btnfrom:focus {
-     color: #fff;
-     background: rgba(18, 29, 51, 0.8);
+    color: #fff;
+    background: rgba(18, 29, 51, 0.8);
 }
 
 .field label {
@@ -673,8 +673,6 @@ p.form_content strong {
     border: 1px solid #ccc;
     border-radius: 8px;
 }
-
-
 
 .field {
     position: relative;
@@ -734,7 +732,7 @@ p.form_content strong {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 15px;
     font-weight: 600;
-    opacity: ;
+
     color: rgb(255, 255, 255);
     background-color: rgb(12, 108, 242);
     border-radius: 8px;
@@ -770,7 +768,7 @@ p.form_content strong {
 }
 
 .already_text a {
-     color: #fff;
+    color: #fff;
 }
 
 .already_text img {
@@ -857,7 +855,7 @@ p.need_help {
     display: block;
     opacity: 1;
     margin: 16px 0px 15px;
-        margin-top: 16px;
+    margin-top: 16px;
     text-align: center;
     margin-top: 0;
     letter-spacing: 0.5px;
@@ -890,12 +888,10 @@ p.need_help {
     font-style: normal;
     color: rgb(152, 161, 178);
     cursor: inherit;
-    display: flex;
+    display: block;
     opacity: 1;
     letter-spacing: 0.5px;
-    align-items: center;
 }
-
 
 .box_links p img {
     position: relative;
@@ -939,10 +935,10 @@ p.content_btm {
     opacity: 1;
     letter-spacing: 0.5px;
 }
- 
+
 p.content_btm a {
-     color: #fff;
-} 
+    color: #fff;
+}
 
 .bottom_link li a {
     font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -964,3 +960,25 @@ p.content_btm a {
     margin: 0 15px;
 }
 
+.icon_menu.float {
+    display: none;
+}
+
+.menu_sidebar ul li {
+    padding: 0 1rem;
+}
+
+.menu_sidebar ul li a {
+    padding: 1rem 0 !important;
+    color: rgb(18, 29, 51);
+    transition: background-color 300ms ease 0s, color 300ms ease 0s;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.menu_sidebar ul li.menu_head_ {
+    background-color: rgb(247, 248, 250);
+    border-bottom: 0.0625rem solid rgb(240, 242, 247);
+    padding: 2rem 1rem 1rem !important;
+}
