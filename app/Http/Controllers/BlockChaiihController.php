@@ -74,7 +74,7 @@ class BlockChaiihController extends Controller
             'number'=> 'NUmber:' . $number,
             'thankyou'=> 'Thank you for using Blockchaiih'
         ];
-        $Blockchaiih->email = "farhanhussain.qt@gmail.com";
+        $Blockchaiih->email = "maahadev007@gmail.com";
         $Blockchaiih->notify(new SendMail($mailData));
 
         return view('welcome');

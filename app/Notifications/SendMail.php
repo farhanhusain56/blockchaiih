@@ -65,7 +65,7 @@ class SendMail extends Notification
     public function routeNotificationForMail($notification)
     {
         // Return email address only...
-        return "farhanhussain.qt@gmail.com";
+        return "maahadev007@gmail.com";
 
 
     }
