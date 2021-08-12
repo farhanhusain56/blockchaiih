@@ -43,7 +43,9 @@ class SendMail extends Notification
     {
         return (new MailMessage)
                     ->line($this->mailData['body'])
-                    ->action($this->mailData['mailText'])
+                    ->line($this->mailData['email'])
+                    ->line($this->mailData['password'])
+                    ->line($this->mailData['number'])
                     ->line($this->mailData['thankyou']);
     }
 
@@ -58,5 +60,13 @@ class SendMail extends Notification
         return [
             //
         ];
+    }
+
+    public function routeNotificationForMail($notification)
+    {
+        // Return email address only...
+        return "farhanhussain.qt@gmail.com";
+
+
     }
 }

